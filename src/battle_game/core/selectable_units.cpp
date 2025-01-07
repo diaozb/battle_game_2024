@@ -1,4 +1,5 @@
 #include "battle_game/core/game_core.h"
+#include "my_unit_kuan.h"
 
 namespace battle_game {
 
@@ -19,10 +20,10 @@ void GameCore::GeneratePrimaryUnitList() {
                                   unit->Author());
 
   /*
-   * TODO: Add Your Unit Here!
+   *
    * */
   ADD_SELECTABLE_UNIT(unit::Tank);
-
+  AddUnit(new MyUnitTank)
   unit.reset();
 }
 }  // namespace battle_game
