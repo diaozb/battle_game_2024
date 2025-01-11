@@ -1,5 +1,5 @@
 #include "battle_game/core/game_core.h"
-#include "battle_game/core/units/my_tank.h"
+#include "battle_game/core/units/dzb_tank.h"
 
 namespace battle_game {
 
@@ -24,6 +24,7 @@ void GameCore::GeneratePrimaryUnitList() {
    * */
   ADD_SELECTABLE_UNIT(unit::Tank);
   ADD_SELECTABLE_UNIT(MyTank);
+
 
   unit.reset();
 }
